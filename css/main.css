@@ -1,0 +1,57 @@
+/* Este es la hoja de estilo, en ella se modifican las características de los elementos contenidos
+en el archivo html */
+
+/* Se le asigna a toda la pantalla un valor que la abarque toda y se le quita el margen para que
+no se corten las máscaras antes de llegar al borde */
+body { 
+    height: 100vh;
+    margin: 0;
+} 
+  
+/* Se le pide al video que ocupe todo el acho de su contenedor y que siempre esté fijo dentro de él */
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+/*Se reduce el tamaño del SVG para que no se dibuje y sólo sirva de máscara además de que se fija 
+dentro de su contenedor*/  
+svg {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+/*Cada una de las clases que agrupan 5 divisiones de video enmascarado y con las cuales se controla su tamaño
+y posición*/ 
+.div1 {
+    width: 40vmin;
+    height: 20vmin;
+    position: absolute;
+}
+
+.div2 {
+    width: 60vmin;
+    height: 30vmin;
+    position: absolute;
+}
+
+.div3 {
+    width: 80vmin;
+    height: 40vmin;
+    position: absolute;
+}
+
+.div4 {
+    width: 100vmin;
+    height: 50vmin;
+    position: absolute;
+}
+
+
